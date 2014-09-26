@@ -30,7 +30,7 @@ body {
 }
 
 .hero-ribbon {
-  background: rgb(104, 214, 170);
+  background-color: rgb(104, 214, 170);
   position: absolute;
   height: 100px;
   width: 100px;
