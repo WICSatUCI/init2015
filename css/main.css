@@ -8,11 +8,11 @@ body {
   width: 100%;
   height: 500px;
   box-shadow: inset 0 0 600px #000;
+  padding: 20px 0;
   background: url('/images/hero2.jpg') no-repeat top left fixed;
 }
 
 .hero-content {
-  padding: 100px 0px;
   margin: 0px 20px;
   text-align: center;
 }
@@ -52,18 +52,48 @@ body {
     }
 }
 
+.hero-ribbon.mobile {
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+}
+
 .hero-ribbon {
-  background: rgb(104, 214, 170);
-  position: absolute;
+  color: #fff;
   height: 100px;
   width: 100px;
-  border-radius: 100px;
   padding: 10px;
   text-align: center;
-  top: 50px;
-  right: 50px;
-  color: #fff;
+  margin-left: auto;
+  position: relative;
+  border-radius: 100px;
+  background: rgb(104, 214, 170);
 }
+
+.hero-ribbon-link {
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero-header {
+    font-size: 55px;
+  }
+
+  .hero-ribbon {
+    display: none;
+  }
+
+  .hero-ribbon.mobile {
+    display: block;
+  }
+}
+
 
 .hero-ribbon-dots {
   position: absolute;
