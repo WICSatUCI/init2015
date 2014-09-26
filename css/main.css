@@ -29,6 +29,20 @@ body {
   text-shadow: 0 0 10px #000;
 }
 
+.hero-cta-2013 {
+  color: rgb(104, 214, 170);
+  text-shadow: 0 0 10px #000;
+}
+
+.hero-cta-2013:hover {
+  color: rgb(70, 148, 117);
+  text-shadow: 0 0 10px #000;
+}
+
+.dot-divider {
+  color: #fff;
+}
+
 @-webkit-keyframes rotate {
     from {
         -webkit-transform: rotate(0deg);
