@@ -29,16 +29,51 @@ body {
   text-shadow: 0 0 10px #000;
 }
 
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
 .hero-ribbon {
   background: rgb(104, 214, 170);
   position: absolute;
   height: 100px;
   width: 100px;
   border-radius: 100px;
+  padding: 10px;
   text-align: center;
-  top: 0;
-  right: 0;
+  top: 50px;
+  right: 50px;
   color: #fff;
+}
+
+.hero-ribbon-dots {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  border: 3px dashed rgb(70, 148, 117);
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 15.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.hero-ribbon:hover {
+  text-shadow: 0px 0px 3px rgb(70, 148, 117);
+}
+
+
+.hero-ribbon-text {
+  margin-top: 22px;
+  padding: 0px 15px;
+  font-size: 18px;
 }
 
 .content {
