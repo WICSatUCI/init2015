@@ -33,11 +33,13 @@ body {
 
 .hero-subheader {
   color: #9068d6;
+  font-weight: bold;
   text-shadow: 0 0 10px #000;
 }
 
 .hero-cta-2013 {
   color: rgb(104, 214, 170);
+  font-weight: bold;
   text-shadow: 0 0 10px #000;
 }
 
