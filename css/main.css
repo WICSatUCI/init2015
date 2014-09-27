@@ -7,12 +7,19 @@ body {
 .hero {
   width: 100%;
   height: 500px;
+  padding: 20px 0;
+}
+
+.hero-image {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 500px;
+  z-index: -1;
   box-shadow: inset 0 0 600px #000;
-  background: url('../images/hero2.jpg') no-repeat top left fixed;
 }
 
 .hero-content {
-  padding: 100px 0px;
   margin: 0px 20px;
   text-align: center;
 }
@@ -26,19 +33,106 @@ body {
 
 .hero-subheader {
   color: #9068d6;
+  font-weight: bold;
   text-shadow: 0 0 10px #000;
+}
+
+.hero-cta-2013 {
+  color: rgb(104, 214, 170);
+  font-weight: bold;
+  text-shadow: 0 0 10px #000;
+  text-decoration: none;
+}
+
+.hero-cta-2013:hover {
+  color: rgb(70, 148, 117);
+  text-shadow: 0 0 10px #000;
+}
+
+.dot-divider {
+  color: #fff;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.hero-ribbon.mobile {
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
 }
 
 .hero-ribbon {
   background-color: rgb(104, 214, 170);
-  position: absolute;
+  color: #fff;
   height: 100px;
   width: 100px;
-  border-radius: 100px;
+  padding: 10px;
   text-align: center;
-  top: 0;
-  right: 0;
-  color: #fff;
+  margin-left: auto;
+  position: relative;
+  border-radius: 100px;
+  background: rgb(104, 214, 170);
+}
+
+.hero-ribbon-link {
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero-header {
+    font-size: 55px;
+  }
+
+  .hero-ribbon {
+    display: none;
+  }
+
+  .hero-ribbon.mobile {
+    display: block;
+  }
+
+  .hero-image {
+    width: auto;
+  }
+}
+
+
+.hero-ribbon-dots {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border: 4px dashed rgb(70, 148, 117);
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 15.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.hero-ribbon:hover {
+  text-shadow: 0px 0px 3px rgb(70, 148, 117);
+}
+
+
+.hero-ribbon-text {
+  margin-top: 22px;
+  padding: 0px 15px;
+  font-size: 18px;
 }
 
 .content {
@@ -47,6 +141,10 @@ body {
   padding: 20px;
 }
 
-.content-header {
+.content-wrap {
+  background: white;
+}
 
+.content-copy {
+  line-height: 25px;
 }
