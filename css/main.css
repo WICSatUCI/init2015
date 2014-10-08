@@ -4,10 +4,6 @@ body {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 .hero {
   width: 100%;
   height: 500px;
@@ -166,6 +162,17 @@ a {
   line-height: 25px;
   list-style-type: none;
   display: inline-block;
+}
+
+.contact-list a,
+.contact-list a:visited {
+  color: #9068d6;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: #533981;
+  text-decoration: none;
 }
 
 .contact-title {
