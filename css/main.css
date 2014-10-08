@@ -5,13 +5,6 @@ body {
 }
 
 a {
-  color: #9068d6;
-  text-decoration: none;
-}
-
-a:hover,
-a:visited {
-  color: #7151a7;
   text-decoration: none;
 }
 
@@ -37,6 +30,7 @@ a:visited {
 
 .hero-header {
   font-size: 85px;
+  margin-top: 160px;
   margin-bottom: 25px;
   color: #fff;
   text-shadow: 0 0 10px #000;
@@ -74,7 +68,7 @@ a:visited {
 }
 
 .hero-ribbon.mobile {
-  margin-top: 75px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   display: none;
@@ -87,13 +81,15 @@ a:visited {
   width: 100px;
   padding: 10px;
   text-align: center;
-  margin-left: auto;
   position: relative;
   border-radius: 100px;
   background: rgb(104, 214, 170);
 }
 
-.hero-ribbon-link {
+.hero-ribbon-link.desktop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   text-decoration: none;
 }
 
@@ -156,21 +152,21 @@ a:visited {
   background: white;
 }
 
+.content .content-copy:last-child {
+  margin-bottom: 0px;
+}
+
 .content-copy {
   line-height: 25px;
 }
 
-.content-wrap .content-copy:last-child {
-  margin-bottom: 0px;
-}
-
 .contact-list {
   width: 30%;
-  padding: 0px;
   margin: 0 20px 0 0;
+  padding: 0px;
   line-height: 25px;
-  display: inline-block;
   list-style-type: none;
+  display: inline-block;
 }
 
 .contact-title {
