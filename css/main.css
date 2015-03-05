@@ -64,6 +64,14 @@ a {
   font-family: 'Helvetica';
 }
 
+.hero-image-2013 {
+  width: 100%;
+}
+
+.hero-image-2013:hover {
+  opacity: 0.7;
+}
+
 .dot-divider {
   color: #fff;
 }
